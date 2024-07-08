@@ -3,6 +3,7 @@ INSTRUCTIONS TO RUN
 REQUIRED: WINDOWS ENVIRONMENT
 (This is used for the graph)
 
+Download Project
 Go to "ITCS-6114-Project-1\Publish\"
 Run "ITCS-6114-Project-1.exe"
 
