@@ -13,14 +13,14 @@ int k = 10;  //Number of samples for each input size
 
 //Generate the Samples
 //Only needs to be ran once, but I kept it here for you
-/*
+
 foreach (int n in inputSizes)
 {
     DataGeneration.GenerateAndSaveSortingInput(n, k);
 }
 
 DataGeneration.GenerateAndSaveSortedInput(50000, k);
-*/
+
 
 List<Action<List<int>>> sortingAlgorithms = new List<Action<List<int>>>
 {
@@ -43,8 +43,6 @@ List<string> algorithmNames = new List<string>
 string projectDirectory = Directory.GetParent(AppContext.BaseDirectory).Parent.Parent.Parent.FullName;
 string csvFilePath = Path.Combine(projectDirectory, "SortingAlgorithmResults.csv");
 
-//Uncomment to run yourself - warning may take a while
-/*
 using (var writer = new StreamWriter(csvFilePath,false))
 {
     writer.WriteLine("AlgorithmName,InputSize,AverageExecutionTime,SpecialCaseType");
@@ -83,7 +81,6 @@ using (var writer = new StreamWriter(csvFilePath,false))
     }
     
 }
-*/
 
 PlotResults(csvFilePath);
 

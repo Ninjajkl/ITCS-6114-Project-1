@@ -27,6 +27,7 @@ namespace ITCS_6114_Project_1
                 list[j + 1] = key;
             }
         }
+
         //MergeSort
         public static List<int> MergeSort(List<int> list)
         {
